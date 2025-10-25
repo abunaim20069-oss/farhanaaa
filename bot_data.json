@@ -1,13 +1,33 @@
 {
   "products": {
     "IPVanish": [],
-    "XVPN": [],
+    "XVPN": [
+      {
+        "gmail": "asdadasd",
+        "password": "adasd"
+      }
+    ],
     "TurboVPN": [],
     "PotatoVPN": [],
     "ExpressVPN": [],
-    "PureVPN": [],
-    "VyprVPN": [],
-    "Bitdefender": [],
+    "PureVPN": [
+      {
+        "gmail": "your_gmail_value",
+        "password": "your_password_value"
+      }
+    ],
+    "VyprVPN": [
+      {
+        "gmail": "354",
+        "password": "35355"
+      }
+    ],
+    "Bitdefender": [
+      {
+        "gmail": "354",
+        "password": "35355"
+      }
+    ],
     "Vypr VPN": [],
     "Bitdefender VPN": [],
     "Nord VPN": [],
@@ -18,9 +38,288 @@
     "Turbo VPN": [],
     "Surfshark": []
   },
-  "balances": {},
-  "pending_payments": {},
-  "unmatched_payments": {},
-  "orders": {},
-  "total_sales": 0.0
+  "balances": {
+    "5830499612": 4655.0,
+    "7119478337": 20.0,
+    "5538182198": 150.0,
+    "6284648798": 75.0,
+    "6413241219": 0.0,
+    "1075952893": 300.0
+  },
+  "pending_payments": {
+    "74eprjld": "7119478337",
+    "sd": "5830499612",
+    "345": "5538182198",
+    "we": "5538182198",
+    "dfgfg546": "5830499612",
+    "4565666": "5538182198",
+    "sdf": "5538182198",
+    "muhrifqiee": "5830499612",
+    "ff": "5830499612",
+    "fgh": "5538182198",
+    "ffs": "5538182198",
+    "dd": "5830499612",
+    "u88": "5830499612",
+    "dfgdfg": "5830499612",
+    "cfb": "6284648798",
+    "gghj": "5830499612",
+    "dfg": "5830499612",
+    "cjl0gscnlu": "6284648798",
+    "303": "5830499612",
+    "8080": "5830499612",
+    "ysa": "5830499612",
+    "yesa": "5830499612",
+    "gghhh": "5830499612",
+    "svsvgaah": "5830499612",
+    "shwjwiwuu": "5830499612",
+    "a": "5830499612",
+    "uyta": "5830499612",
+    "3090": "1075952893",
+    "s": "5830499612",
+    "asas": "1075952893",
+    "3w4sd": "5830499612",
+    "dfgddd": "5830499612",
+    "1234567": "5830499612",
+    "4567456dfgdfg": "5830499612",
+    "346": "5830499612",
+    "vfsxdf33": "5830499612",
+    "546rtghfgh": "5830499612",
+    "3333df": "5830499612",
+    "3333gfdf": "5830499612",
+    "xfdvg56y": "5830499612",
+    "bghr456": "5830499612",
+    "dfgdfg34e5": "6284648798",
+    "445t": "5830499612"
+  },
+  "unmatched_payments": {
+    "aa": 30.0,
+    "shssh": 300.0
+  },
+  "orders": {
+    "5830499612": [
+      {
+        "vpn_name": "Bitdefender VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value"
+        },
+        "timestamp": "2025-10-05 00:28:15"
+      },
+      {
+        "vpn_name": "Vypr VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value"
+        },
+        "timestamp": "2025-10-23 19:45:00"
+      },
+      {
+        "vpn_name": "Vypr VPN",
+        "item": {
+          "gmail": "satvdt24@gmail.com",
+          "password": "satvdt24@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:18:47"
+      },
+      {
+        "vpn_name": "Bitdefender VPN",
+        "item": {
+          "gmail": "satvdt24@gmail.com",
+          "password": "satvdt24@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:22:11"
+      },
+      {
+        "vpn_name": "HMA VPN",
+        "item": {
+          "gmail": "satvdt24@gmail.com",
+          "password": "satvdt24@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:25:07"
+      },
+      {
+        "vpn_name": "Nord VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value"
+        },
+        "timestamp": "2025-10-24 01:29:43"
+      },
+      {
+        "vpn_name": "Bitdefender VPN",
+        "item": {
+          "gmail": "fghgf45@gmail.com",
+          "password": "aass22@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:32:51"
+      },
+      {
+        "vpn_name": "Express VPN",
+        "item": {
+          "gmail": "ssaa11@gmail.com",
+          "password": "aass1122@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:33:43"
+      },
+      {
+        "vpn_name": "X VPN",
+        "item": {
+          "gmail": "satvdt24@gmail.com",
+          "password": "satvdt24@gmail.com"
+        },
+        "timestamp": "2025-10-24 01:36:03"
+      },
+      {
+        "vpn_name": "HMA VPN",
+        "item": {
+          "activation_key": "fdgdf456546"
+        },
+        "timestamp": "2025-10-24 03:28:11"
+      },
+      {
+        "vpn_name": "HMA VPN",
+        "item": {
+          "activation_key": "fcghfgchfy45y6"
+        },
+        "timestamp": "2025-10-25 13:49:06"
+      },
+      {
+        "vpn_name": "Express VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value",
+          "activation_key": "your_activation_key_value"
+        },
+        "timestamp": "2025-10-25 14:15:35"
+      },
+      {
+        "vpn_name": "HMA VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value",
+          "activation_key": "your_activation_key_value"
+        },
+        "timestamp": "2025-10-25 14:16:39"
+      },
+      {
+        "vpn_name": "Express VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value",
+          "activation_key": "your_activation_key_value"
+        },
+        "timestamp": "2025-10-25 14:20:11"
+      },
+      {
+        "vpn_name": "Turbo VPN",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value",
+          "activation_key": "your_activation_key_value"
+        },
+        "timestamp": "2025-10-25 23:53:10"
+      },
+      {
+        "vpn_name": "Surfshark",
+        "item": {
+          "gmail": "your_gmail_value",
+          "password": "your_password_value",
+          "activation_key": "your_activation_key_value"
+        },
+        "timestamp": "2025-10-26 00:14:18"
+      }
+    ],
+    "7119478337": [
+      {
+        "vpn_name": "XVPN",
+        "item": {
+          "gmail": "asdasd@gmai.com",
+          "password": "asass",
+          "expiry": "200-0303"
+        },
+        "timestamp": "2025-09-28 22:22:42"
+      },
+      {
+        "vpn_name": "TurboVPN",
+        "item": {
+          "gmail": "Sayefashd@gmail.com",
+          "password": "asgdbasjhdb234",
+          "expiry": "2000-23-23"
+        },
+        "timestamp": "2025-09-28 22:25:59"
+      },
+      {
+        "vpn_name": "TurboVPN",
+        "item": {
+          "gmail": "3455@gmail.com",
+          "password": "5555jhdb234",
+          "expiry": "2000-23-23"
+        },
+        "timestamp": "2025-09-28 23:24:31"
+      },
+      {
+        "vpn_name": "PotatoVPN",
+        "item": {
+          "gmail": "your_gmail_address",
+          "password": "your_password"
+        },
+        "timestamp": "2025-09-29 00:08:28"
+      }
+    ],
+    "5538182198": [
+      {
+        "vpn_name": "IPVanish",
+        "item": {
+          "username": "Sayef@gmail.com",
+          "password": "Sayef234@",
+          "expiry": "2025-02-03"
+        },
+        "timestamp": "2025-09-29 01:13:05"
+      },
+      {
+        "vpn_name": "ExpressVPN",
+        "item": {
+          "gmail": "your_gmail_address",
+          "password": "your_password",
+          "pc_key": "234234"
+        },
+        "timestamp": "2025-09-29 01:13:17"
+      }
+    ],
+    "6284648798": [
+      {
+        "vpn_name": "Zoog VPN",
+        "item": {
+          "gmail": "dfgdfg",
+          "password": "dfgdfg"
+        },
+        "timestamp": "2025-10-21 14:23:46"
+      }
+    ],
+    "6413241219": []
+  },
+  "total_sales": 655.0,
+  "free_orders": {
+    "5830499612_1761427525": {
+      "user_id": "5830499612",
+      "vpn_name": "Potato VPN",
+      "price": 30,
+      "timestamp": "2025-10-26 03:25:25",
+      "delivered": false
+    },
+    "5830499612_1761427608": {
+      "user_id": "5830499612",
+      "vpn_name": "Zoog VPN",
+      "price": 15,
+      "timestamp": "2025-10-26 03:26:48",
+      "delivered": false
+    },
+    "5830499612_1761427962": {
+      "user_id": "5830499612",
+      "vpn_name": "Sky VPN",
+      "price": 30,
+      "timestamp": "2025-10-26 03:32:42",
+      "delivered": false
+    }
+  }
 }
