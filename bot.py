@@ -4,14 +4,14 @@ from telebot.types import ReplyKeyboardMarkup, InlineKeyboardMarkup, InlineKeybo
 import time # For timestamp in orders
 
 # ========== CONFIG ==========
-BOT_TOKEN = "8288740951:AAEt73NF3jezv0JPDVVwYTGNVgTbdqmyPOE" # আপনার বট টোকেন
+BOT_TOKEN = "7989043300:AAECZAXZ9ycCSBhfYujXQx5CyVW03bh0AUs" # আপনার বট টোকেন
 ADMIN_ID  = 6413241219  # আপনার অ্যাডমিন টেলিগ্রাম ইউজার আইডি
 DATA_FILE = "bot_data.json"
 
 BOT_ID = int(BOT_TOKEN.split(":")[0]) # <--- এটিই সঠিক লাইন
 
 # --- Define the file_id for your general welcome image here ---
-WELCOME_PHOTO_FILE_ID = "AgACAgUAAxkBAAMuaP08v9w7yJcC9-3IOcLwiyO9QpAAApsQaxvA2ulX_h5CJO1_aPIBAAMCAAN5AAM2BA" # Example file_id, replace with yours!
+WELCOME_PHOTO_FILE_ID = "AgACAgUAAxkBAANeaN16I-UxernNmUXW0ez9QUwQa78AAkXEMRvSaPFW29cLmQ1jtvIBAAMCAAN5AAM2BA" # Example file_id, replace with yours!
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode=None)
 
@@ -462,7 +462,7 @@ def save_trx_id(message):
         bot.send_message(ADMIN_ID, f"✅ Auto-confirmed TRX `{trx.upper()}` for user `{uid}`. Amount: {amt} TK", parse_mode="Markdown")
     else:
         save_data(data)
-        bot.reply_to(message, "✅ TRX ID received. Thank You ❤️‍🩹")
+        bot.reply_to(message, "✅ TRX ID received. Awaiting admin confirmation.")
         bot.send_message(ADMIN_ID, f"💳 *Payment Request*\nTRX ID: `{trx.upper()}`\nUser ID: `{uid}`\n\nForward the bKash/Nagad SMS here to confirm.", parse_mode="Markdown")
     
     bot.send_message(message.chat.id, "⬅️ Back to menu:", reply_markup=main_menu_markup())
@@ -494,34 +494,6 @@ def admin_bkash_nagad_parser(m):
         bot.reply_to(m, f"⚠ SMS saved. No pending user request found for TRX ID: `{trx.upper()}`. Will auto-confirm when user provides TRX ID.\nAmount: {amt} TK", parse_mode="Markdown")
     else:
         bot.reply_to(m, f"ℹ️ This TRX ID `{trx.upper()}` is already in unmatched payments.", parse_mode="Markdown")
-
-# ========== ADMIN: BROADCAST ==========
-@bot.message_handler(commands=['broadcast'])
-def ask_broadcast_message(message):
-    if str(message.from_user.id) != str(ADMIN_ID):
-        return
-    msg = bot.send_message(message.chat.id, "📢 Send the message you want to broadcast to all users:", reply_markup=ForceReply())
-    bot.register_next_step_handler(msg, broadcast_to_all)
-
-def broadcast_to_all(message):
-    if str(message.from_user.id) != str(ADMIN_ID):
-        return
-    broadcast_text = message.text.strip()
-    if not broadcast_text:
-        bot.send_message(message.chat.id, "❌ Message is empty. Broadcast cancelled.")
-        return
-
-    sent_count = 0
-    failed_count = 0
-    for uid in balances.keys():  # balances dict contains all user IDs
-        try:
-            bot.send_message(int(uid), f"আসসালামু আলাইকুম ❤️‍🩹\n\n{broadcast_text}")
-            sent_count += 1
-        except Exception as e:
-            failed_count += 1
-
-    bot.send_message(message.chat.id, f"✅ Broadcast complete.\nSent: {sent_count}\nFailed: {failed_count}")
-
 
 # ========== ADMIN: REMIND PENDING FREE ORDERS ==========
 @bot.message_handler(commands=['remind_freeorders'])
@@ -569,6 +541,32 @@ def remind_pending_free_orders(message):
             print(f"Could not send reminder to {uid}: {e}")
     
     bot.send_message(message.chat.id, f"✅ Reminder sent to {pending_count} users with pending orders.")
+# ========== ADMIN: BROADCAST ==========
+@bot.message_handler(commands=['broadcast'])
+def ask_broadcast_message(message):
+    if str(message.from_user.id) != str(ADMIN_ID):
+        return
+    msg = bot.send_message(message.chat.id, "📢 Send the message you want to broadcast to all users:", reply_markup=ForceReply())
+    bot.register_next_step_handler(msg, broadcast_to_all)
+
+def broadcast_to_all(message):
+    if str(message.from_user.id) != str(ADMIN_ID):
+        return
+    broadcast_text = message.text.strip()
+    if not broadcast_text:
+        bot.send_message(message.chat.id, "❌ Message is empty. Broadcast cancelled.")
+        return
+
+    sent_count = 0
+    failed_count = 0
+    for uid in balances.keys():  # balances dict contains all user IDs
+        try:
+            bot.send_message(int(uid), f"আসসালামু আলাইকুম ❤️‍🩹\n\n{broadcast_text}")
+            sent_count += 1
+        except Exception as e:
+            failed_count += 1
+
+    bot.send_message(message.chat.id, f"✅ Broadcast complete.\nSent: {sent_count}\nFailed: {failed_count}")
 
 # ========== ADMIN: FREE ORDERS PANEL ==========
 @bot.message_handler(func=lambda m: norm_text(m.text) == "📩 free orders" and str(m.from_user.id) == str(ADMIN_ID))
